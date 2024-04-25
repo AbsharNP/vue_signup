@@ -1,26 +1,67 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+   <!-- <NavBar /> -->
+   
+  </div>
+  <!-- <HomeMsg /> -->
+  <Router-View />
+  <!-- <SignUp /> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// import NavBar from './components/NavBar.vue'
+// import HomeMsg from './components/Home.vue'
+// import LoginPage from './components/Login.vue'
+// import SignUp from './components/SignUp.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    // NavBar,
+    // HomeMsg,
+    // LoginPage,
+    // SignUp,
+  },
+
+ 
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
 }
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #FFC017;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 4.5rem;
+}
+
 </style>
